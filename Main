@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        Cruzamento cruzamento = new Cruzamento();
+        Thread carro1 = new Carro(cruzamento, "Norte");
+        Thread carro2 = new Carro(cruzamento, "Sul");
+        Thread carro3 = new Carro(cruzamento, "Norte");
+        Thread carro4 = new Carro(cruzamento, "Sul");
+        carro1.start();
+        carro2.start();
+        carro3.start();
+        carro4.start();
+    }
+}
